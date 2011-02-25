@@ -20,8 +20,13 @@ You can find a video tutorial on how to use this plugin on our website
 
 = Features =
 
+Upload Music to your amazon s3 account and  then stream it directly from your acount onto your blog.
 
+Add to sidebar off blog or add to page with shortcode.
 
+configure through admin menu "isd s3 player option".
+
+Have fun and please give me feedback ;)
 
 
 == Installation ==
