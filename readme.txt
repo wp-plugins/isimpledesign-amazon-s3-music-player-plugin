@@ -9,7 +9,7 @@ License: GPLv2
 
 == Description ==
 
-I created this simple plugin to pull in feeds from a category from our blog so that we can promote to our clients from the dashboard.
+I created this simple plugin to allow wordpress users to stream music from their amazon s3 storage account.
 
 For more information 
 
