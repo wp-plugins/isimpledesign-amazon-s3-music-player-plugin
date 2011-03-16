@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Amazon S3 Music Playlist Plugin
+Plugin Name: Amazon S3 Music Playlist Plugin 
 Plugin URI: http://http://www.isimpledesign.co.uk/
-Description: A plugin that allows you to link to your amazon S3 bucket and sets up a playlist 
-Version: 1.1
-Author: Samuel East
+Description: A plugin that allows you to link to your amazon S3 bucket and sets up a playlist. This plugin will only play .mp3 files please use Lamedrop to convert your files.
+Version: 1.2
+Author: Samuel East - Web Developer South Wales
 Author URI: http://www.isimpledesign.co.uk/wordpress-plugins
 License: GPL2
 */ 
