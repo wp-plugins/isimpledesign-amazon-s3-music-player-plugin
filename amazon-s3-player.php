@@ -128,7 +128,7 @@ if ($sizef == 0) { ?>
 <?php		}
 	}
 } 
- 
+  
 // Base function 
 function isd_s3player() {
 
@@ -140,13 +140,13 @@ $amazon_secret_key	= get_option("isd-amazon_secret_key");
 $bucket	= get_option("isd-bucket");	
 $folder	= get_option("isd-folder");
 
-$test = $amazon_key." ".$amazon_secret_key." ".$bucket." ".$folder;
+$test = $amazon_key."-".$amazon_secret_key."-".$bucket."-".$folder;
 
 echo '<object type="application/x-shockwave-flash" data="'.$s3url.'dewplayer-playlist.swf" width="235" height="200" id="dewplayer" name="dewplayer">
     <param name="wmode" value="transparent" />
 	<param name="wmode" value="transparent" />
 	<param name="movie" value="'.$s3url.'dewplayer-playlist.swf" />
-	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.htmlentities(stripslashes($test)).'&autostart=1" />
+	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.urlencode($test).'&autostart=1" />
 </object>';  
 }
 
