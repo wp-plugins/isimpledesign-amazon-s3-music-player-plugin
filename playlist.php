@@ -1,7 +1,7 @@
 <?php
 //Grab the get variable and explode at the space
 $bucket	= $_GET["name"];
-$store = explode(" ", $bucket);
+$store = explode("-", $bucket);
 //include the S3 class 
 if (!class_exists('S3'))require_once('s3/S3.php');
 
@@ -11,7 +11,7 @@ if (!defined('awsSecretKey')) define('awsSecretKey', $store[1]);
 
 //instantiate the class
 $s3 = new S3(awsAccessKey, awsSecretKey);
-
+ 
 // Get the contents of our bucket
 $bucket_contents = $s3->getBucket($store[2],$store[3]);
 
