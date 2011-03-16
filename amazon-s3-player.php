@@ -3,7 +3,7 @@
 Plugin Name: Amazon S3 Music Playlist Plugin
 Plugin URI: http://http://www.isimpledesign.co.uk/
 Description: A plugin that allows you to link to your amazon S3 bucket and sets up a playlist 
-Version: 1.0
+Version: 1.1
 Author: Samuel East
 Author URI: http://www.isimpledesign.co.uk/wordpress-plugins
 License: GPL2
@@ -146,7 +146,7 @@ echo '<object type="application/x-shockwave-flash" data="'.$s3url.'dewplayer-pla
     <param name="wmode" value="transparent" />
 	<param name="wmode" value="transparent" />
 	<param name="movie" value="'.$s3url.'dewplayer-playlist.swf" />
-	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.$test.'&autostart=1" />
+	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.htmlentities(stripslashes($test)).'&autostart=1" />
 </object>';  
 }
 
