@@ -3,7 +3,7 @@ Contributors: Sam East
 Tags: Amazon S3, Music Player, Mp3 Player, Audio Player
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPLv2
 
 
@@ -68,4 +68,6 @@ Coming soon...
 
 == Changelog ==
 
-= 1.0 =
+Fixed issues with xml errors 
+
+= 1.2 =
