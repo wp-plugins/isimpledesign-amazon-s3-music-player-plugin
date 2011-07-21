@@ -18,8 +18,8 @@ $bucket					= '';
 $folder					= '';
 
 // Put our defaults in the "wp-options" table
-add_option("isd-amazon_key", $amazon_key);
-add_option("isd-amazon_secret_key", $amazon_secret_key);
+add_option("isd-amazon_key", $amazon_key, 'yes' );
+add_option("isd-amazon_secret_key", $amazon_secret_key, 'yes' );
 add_option("isd-bucket", $bucket);
 add_option("isd-folder", $folder); 
 
@@ -146,7 +146,7 @@ echo '<object type="application/x-shockwave-flash" data="'.$s3url.'dewplayer-pla
     <param name="wmode" value="transparent" />
 	<param name="wmode" value="transparent" />
 	<param name="movie" value="'.$s3url.'dewplayer-playlist.swf" />
-	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.urlencode($test).'&autostart=1" />
+	<param name="flashvars" value="showtime=true&autoreplay=true&xml='.$s3url.'playlist.php?name='.urlencode(urlencode($test)).'&autostart=1" />
 </object>';  
 }
 
